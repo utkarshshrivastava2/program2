@@ -1,4 +1,4 @@
-# program2 palindrome
+# palindrome
 package assignment;
 import java.util.Scanner;
 
@@ -6,16 +6,11 @@ import java.util.Scanner;
 
 
 public class palindrome {
-		
+	
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		  int r,sum=0,temp; 
-		  Scanner s= new Scanner(System.in);
-		  int n= s.nextInt();
-		  
-		  
-		  temp=n;    
+	static void ispalindrome(int n) {
+		 int r,sum=0,temp; 
+		 temp=n;    
 		  while(n>0){    
 		   r=n%10; 
 		   sum=(sum*10)+r;    
@@ -28,5 +23,19 @@ public class palindrome {
 	
 	}
 
+		
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 
+		  Scanner s= new Scanner(System.in);
+		  int n= s.nextInt();
+		  ispalindrome(n);
+		  
+		  
+		  
+		 
+	
+
 }
- 
+}
